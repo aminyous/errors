@@ -1,7 +1,3 @@
-movie = {
-    "name": "Titanic",
-    "director": "James Cameron",
-    "year": 1997
-}
+""" hello is not defined as a variable """
 
-print(movie["release"])
+print(hello)
