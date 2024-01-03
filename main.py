@@ -1,3 +1,3 @@
-""" hello is not defined as a variable """
-
-print(hello)
+friends = ["Amine", "Chris", "Lobna"]
+friends_nearby = ["Amine", "Mourad"]
+friends.intersection(friends_nearby)
