@@ -1,12 +1,15 @@
-class User:
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
+class Garage:
+    def __init__(self):
+        self.cars = []
 
-    def login(self):
-        raise NotImplementedError("This feature has not been implemented yet.")
+    def __len__(self):
+        return len(self.cars)
+
+    def add_car(self, car):
+        raise NotImplementedError("We can't add cars to the garage yet.")
 
 
-client = User("Amine", "123")
-client.login()
+ford = Garage()
+ford.add_car("Fiesta")
+print(len(ford))
 
