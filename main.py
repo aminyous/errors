@@ -1,15 +1,11 @@
-class Garage:
-    def __init__(self):
-        self.cars = []
-
-    def __len__(self):
-        return len(self.cars)
-
-    def add_car(self, car):
-        raise NotImplementedError("We can't add cars to the garage yet.")
+class MyCustomError(Exception):
+    """ This is a doc string for this particular class """
+    def __init__(self, message, code):
+        super().__init__(f"Error code {code}: {message}")
+        self.code = code
 
 
-ford = Garage()
-ford.add_car("Fiesta")
-print(len(ford))
+raise MyCustomError("OUCH! An error happened", 500)
+
+
 
