@@ -5,7 +5,8 @@ class MyCustomError(Exception):
         self.code = code
 
 
-raise MyCustomError("OUCH! An error happened", 500)
+err = MyCustomError("OUCH! An error happened", 500)
+print(err.__doc__)
 
 
 
